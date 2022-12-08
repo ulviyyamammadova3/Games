@@ -1,0 +1,218 @@
+.bawliq {
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    justify-content: center;
+
+    margin-top: 20px;
+    width: 750px;
+  height: 35px;
+  --border-width: 3px;
+  border-radius: var(--border-width);
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  
+
+}
+a {
+    color: rgb(0, 0, 0);
+    margin-right:10px ;
+    padding:5px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Silkscreen', cursive;
+    font-size: 15px;
+    justify-self: center;
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 10px;
+
+}
+
+   
+
+.bawliq::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 97%, 34%),
+      hsl(269, 81%, 54%),
+      hsl(314, 71%, 39%),
+      hsl(359, 94%, 58%),
+      hsl(0, 80%, 32%),
+      hsl(89, 87%, 53%),
+      hsl(134, 84%, 37%),
+      hsl(179, 71%, 25%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 5s alternate infinite;
+  }
+
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
+body {
+  background-image: url("https://cdn.cloudflare.steamstatic.com/steam/apps/1030840/ss_f531c551d9794deafc1e45421b70e8d4c254aaca.1920x1080.jpg?t=1632420251") ;
+    width: 100%;
+    height: 300vh;
+    
+
+}
+
+.owbi {
+
+height: 1080px;
+background-size: cover;
+width: 100%;
+background-repeat: repeat ;
+
+}
+.rgba {
+  background-color: rgba(0,0, 0,0.6);
+  width: 100%;
+  height: 390vh;
+  
+}
+.welcome {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
+    align-items: center;
+    width: 100%;
+
+    height: 400px;
+    
+      
+  }
+   .wiki
+   {
+      width: 40%;
+     
+   }
+   .sagdaki {
+      width: 500px;
+      height: 580px;
+      margin-top: 100px;
+      
+  
+   }
+  h1 {
+      color: rgb(255, 255, 255);
+      font-size: 2.2em;
+      font-weight: bold;
+      font-style: initial;
+      font-family: 'Kanit', serif;
+
+  
+  }
+  h2{
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-family: 'Kanit', serif;
+}
+  .cnwiki {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Kanit', serif;
+  }
+  
+  
+  .submit5 , .submit6 {
+      background-color:rgb(255, 255, 255);
+      border: none;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      font-family: 'Kanit', serif;
+      margin-top: 5px;
+     
+  }
+  .soll {
+    padding-bottom: 20px;
+
+  }
+ .nd {
+margin-top: 90px;
+  }
+
+  .buy {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto;
+
+  }
+  .xbox , .ps{
+width: 600px;
+height: 600px;
+
+border-radius: 10px;
+background-size: cover;
+
+
+  }
+  .sekil1 , .sekil2 {
+    width: 600px;
+    height: 450px;
+  margin-left: 10px;
+    padding-top: 40px;
+    
+  }
+.download {
+  width: 600px;
+  height: 30px;
+  border: 2px solid green;
+  margin: 20px auto;
+  background-color: green;
+}
+.yukle {
+  text-align: center;
+  font-size: 27px;
+  color: white;
+  font-family: 'Kanit', serif;
+}
+.pap {
+  text-align: center;
+}
+.ayaq {
+  display: flex;
+background-color: black;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 200px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-top: 2px black solid;
+}
+
+.iconlar {
+  font-size: 25px;
+padding: 5px;
+color: rgb(255, 255, 255);
+left: 90px
+
+}
+.facel>a {
+font-size: 18px;
+  margin-right: 100px;
+color: white;
+
+}

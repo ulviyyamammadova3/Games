@@ -1,0 +1,87 @@
+.carousel-item {
+    width: 100%;
+    height:750px;
+    background-position: center;
+    
+}
+img {
+    width: 1920px;
+    height: 750px;
+    
+}
+
+.carousel {
+    width: 100%;
+    height: 750px;
+    
+
+}
+.bawliq {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  justify-content: center;
+
+  margin-top: 20px;
+  width: 750px;
+height: 35px;
+--border-width: 3px;
+border-radius: var(--border-width);
+align-items: center;
+text-transform: uppercase;
+text-align: center;
+
+
+}
+a {
+  color: rgb(0, 0, 0);
+  margin-right:10px ;
+  padding:5px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Silkscreen', cursive;
+  font-size: 15px;
+  justify-self: center;
+  text-decoration: none;
+  padding-right: 15px;
+  padding-left: 10px;
+
+}
+
+li{
+    margin-top: 10px;
+}
+
+   
+
+.bawliq::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 97%, 34%),
+      hsl(269, 81%, 54%),
+      hsl(314, 71%, 39%),
+      hsl(359, 94%, 58%),
+      hsl(0, 80%, 32%),
+      hsl(89, 87%, 53%),
+      hsl(134, 84%, 37%),
+      hsl(179, 71%, 25%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 5s alternate infinite;
+  }
+
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
